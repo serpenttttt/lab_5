@@ -13,8 +13,6 @@ int main_task2() {
     double multiplier = 1.0;
 
     for (int i = 0; (input = getchar()) != '\0'; ++i) {
-        printf("%c", input);
-
         switch (input) {
             case ' ':
                 push(buffer);
