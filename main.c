@@ -14,6 +14,6 @@ int main() {
     insert_string(s2);
     find_position_of_element_in_s1(s1, s2);
 
-    puts("Task2");
+    puts("\nTask2");
     return main_task2();
 }
