@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <malloc.h>
 #include "lab_5.h"
+#include "calc.h"
 
 int main() {
     puts("Task1");
@@ -13,5 +14,6 @@ int main() {
     insert_string(s2);
     find_position_of_element_in_s1(s1, s2);
 
-    return 0;
+    puts("Task2");
+    return main_task2();
 }
