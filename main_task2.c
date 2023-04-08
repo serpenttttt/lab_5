@@ -15,7 +15,6 @@ int main_task2() {
     for (int i = 0; (input = getchar()) != '\0'; ++i) {
         switch (input) {
             case ' ':
-                push(buffer);
                 multiplier = 1.0;
                 count = 0;
                 buffer = 0;
@@ -30,8 +29,12 @@ int main_task2() {
             case '7' :
             case '8' :
             case '9' :
-                buffer = buffer * 10 * multiplier + atof(&input)*pow(multiplier, count);
+                if (count > 0)
+                    buffer = pop() * 10 * multiplier + atof(&input)*pow(multiplier, count);
+                else
+                    buffer = buffer * 10 * multiplier + atof(&input)*pow(multiplier, count);
                 ++count;
+                push(buffer);
                 break;
             case '+':
                 push(pop() + pop());

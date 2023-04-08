@@ -16,7 +16,7 @@ void find_position_of_element_in_s1(char *s1, char *s2) {
         for (int j = 0; s2[j] != '\0'; ++j) {
             if (s1[i] == s2[j]) {
                 position = i;
-                printf("position %d", i);
+                printf("position %d ", i);
             }
         }
     }
